@@ -83,4 +83,4 @@ spiral = num => {
     return result;
 }
 
-console.log(spiral(2));
+console.log(spiral(5));
