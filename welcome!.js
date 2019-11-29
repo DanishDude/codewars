@@ -20,7 +20,7 @@ function greet(language) {
         welsh: 'Croeso'
     }
 
-    return Object.keys(lang).includes(language) ? lang.language : lang.english;
+    return lang[language] || lang.english;
 }
 
 console.log(greet('english'));
