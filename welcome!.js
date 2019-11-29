@@ -1,27 +1,24 @@
-
-function greet(language) {
-    const lang = {
-        english: 'Welcome',
-        czech: 'Vitejte',
-        danish: 'Velkomst',
-        dutch: 'Welkom',
-        estonian: 'Tere tulemast',
-        finnish: 'Tervetuloa',
-        flemish: 'Welgekomen',
-        french: 'Bienvenue',
-        german: 'Willkommen',
-        irish: 'Failte',
-        italian: 'Benvenuto',
-        latvian: 'Gaidits',
-        lithuanian: 'Laukiamas',
-        polish: 'Witamy',
-        spanish: 'Bienvenido',
-        swedish: 'Valkommen',
-        welsh: 'Croeso'
-    }
-
-    return lang[language] || lang.english;
+const lang = {
+    english: 'Welcome',
+    czech: 'Vitejte',
+    danish: 'Velkomst',
+    dutch: 'Welkom',
+    estonian: 'Tere tulemast',
+    finnish: 'Tervetuloa',
+    flemish: 'Welgekomen',
+    french: 'Bienvenue',
+    german: 'Willkommen',
+    irish: 'Failte',
+    italian: 'Benvenuto',
+    latvian: 'Gaidits',
+    lithuanian: 'Laukiamas',
+    polish: 'Witamy',
+    spanish: 'Bienvenido',
+    swedish: 'Valkommen',
+    welsh: 'Croeso'
 }
+
+const greet = language => lang[language] || lang.english;
 
 console.log(greet('english'));
 console.log(greet('dutch'));
